@@ -33,14 +33,14 @@ const CartItems = () => {
         <p className='font-bold text-rose-900'>${totalOrderPrice.toFixed(2)}</p>
       </div>
       <div className='flex justify-center p-2 mt-3 bg-rose-50 rounded-md'>
-        <Image src={"/assets/images/icon-carbon-neutral.svg"} width={20} height={10}/>
+        <Image src={"/assets/images/icon-carbon-neutral.svg"} alt='img' width={20} height={10}/>
         <p className='text-sm'>This is a <span className='font-medium text-rose-900'>carbon-neutral</span> delivery.</p>
       </div>
       <button className='w-full mt-3 bg-red rounded-[20px] py-2 text-[#fff] hover:bg-green' onClick={() => setOpen(true)}>Confirm Order</button>
         </div>
       ) : (
       <div className='p-4  flex flex-col gap-4 justify-center items-center'>
-        <Image src={'/assets/images/illustration-empty-cart.svg'} width={80} height={80}/>
+        <Image src={'/assets/images/illustration-empty-cart.svg'} alt='img' width={80} height={80}/>
         <p className='text-rose-500 text-sm'>Your added item will appear here</p>
       </div>
       )}
@@ -49,7 +49,7 @@ const CartItems = () => {
     <Modal open={open} onClose={onCloseModal} center showCloseIcon={false} closeOnOverlayClick={false} classNames={{
       modal: "rounded-md"
     }}>
-      <Image src={"/assets/images/icon-order-confirmed.svg"} width={24} height={24}/>
+      <Image src={"/assets/images/icon-order-confirmed.svg"} alt='img' width={24} height={24}/>
       <p className='text-2x font-bold text-rose-900 mt-3'>Order Confirmed</p>
       <p className='mt-1 text-rose-500 text-sm'>We hope you enjoy your food! <span className='font-bold text-rose-900'>Bushaga loves you!</span></p>
       <div className='bg-rose-50 rounded-md mt-4 p-4'>
@@ -58,7 +58,7 @@ const CartItems = () => {
           <div key={index} className='flex justify-between items-center gap-16 pt-2'>
             <div className='flex gap-2 items-center'>
               <div>
-                <Image src={item.image.thumbnail} width={60} height={60}/>
+                <Image src={item.image.thumbnail} alt='img' width={60} height={60}/>
               </div>
               <div>
                 <p className='font-bold text-rose-900'>{item.name}</p>

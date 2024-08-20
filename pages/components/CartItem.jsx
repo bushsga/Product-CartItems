@@ -19,7 +19,7 @@ const CartItem = ({ cartItem }) => {
         </p>
       </div>
       <button className='rounded-full border border-rose-300 hover:border-rose-500  p-1' onClick={onClickHandler}>
-        <Image src={"/assets/images/icon-remove-item.svg"} width={10} height={10}/>
+        <Image src={"/assets/images/icon-remove-item.svg"} alt='img' width={10} height={10}/>
       </button>
     </div>
   )
