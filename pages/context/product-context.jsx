@@ -1,3 +1,4 @@
+import React from "react";
 import { createContext, useContext, useEffect, useState } from "react";
 import data from '../data.json';
 import CartItems from "../components/CartItems";
