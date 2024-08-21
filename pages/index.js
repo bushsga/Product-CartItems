@@ -1,3 +1,4 @@
+import React from "react";
 import Products from "./components/Products";
 import CartItems from "./components/CartItems";
 
