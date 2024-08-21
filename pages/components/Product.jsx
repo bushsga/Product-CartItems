@@ -6,7 +6,7 @@ const Product = ({ product }) => {
   const {isItemInCart, addItemToCart, getCartItemQty, decrementCartQty, incrementCartQty} = useProductContext();
   return (
     <div>
-      <Image src={product.image.desktop} alt={product.name} className='rounded-md w-full'/>
+      <Image src={product.image.desktop} alt={product.name} width={502} height={480} className='rounded-md w-full'/>
       <div className='relative py-6'>
         <div className='w-full absolute -top-5 flex justify-center'>
          {isItemInCart(product.name) ? (
