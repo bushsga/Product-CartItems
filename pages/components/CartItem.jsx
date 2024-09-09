@@ -1,6 +1,6 @@
-import Image from 'next/image'
-import React from 'react'
-import { useProductContext } from '../context/product-context'
+import Image from 'next/image';
+import React from 'react';
+import { useProductContext } from '../../lib/product-context';
 
 const CartItem = ({ cartItem }) => {
   const { removeCartItem } = useProductContext();

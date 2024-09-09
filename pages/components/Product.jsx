@@ -1,6 +1,6 @@
-import React from 'react'
-import Image from 'next/image'
-import { useProductContext } from '../context/product-context'
+import React from 'react';
+import Image from 'next/image';
+import { useProductContext } from '../../lib/product-context';
 
 const Product = ({ product }) => {
   const {isItemInCart, addItemToCart, getCartItemQty, decrementCartQty, incrementCartQty} = useProductContext();

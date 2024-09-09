@@ -1,7 +1,7 @@
 import React from "react";
 import { createContext, useContext, useEffect, useState } from "react";
-import data from '../data.json';
-import CartItems from "../components/CartItems";
+import data from '../pages/data/data.json';
+
 
 const ProductContext = createContext(undefined);
 

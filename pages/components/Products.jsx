@@ -1,6 +1,6 @@
-import React from 'react'
-import { useProductContext } from '../context/product-context'
-import Product from './Product'
+import React from 'react';
+import { useProductContext } from '../../lib/product-context';
+import Product from './Product';
 
 const Products = () => {
   const { products } = useProductContext()

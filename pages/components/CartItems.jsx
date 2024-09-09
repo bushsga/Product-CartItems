@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useProductContext } from '../context/product-context';
+import { useProductContext } from '../../lib/product-context';
 import 'react-responsive-modal/styles.css';
 import { Modal } from 'react-responsive-modal';
 import CartItem from './CartItem';
